@@ -1,20 +1,25 @@
 
 
-#+annotation: 1 0.022 0.086 -xxx [2021/01/25]
-hoge
+#+annotation: 1 0.007 0.001 -xxx [2021/01/25]
+top left
 
-#+annotation: 1 0.132 0.192 -xxx [2021/01/25]
-foo
-
-#+annotation: 1 -0.023 0.807 -xxx [2021/01/25]
-bottom left
-
-#+annotation: 1 0.886 0.040 -xxx [2021/01/25]
+#+annotation: 1 0.979 0.006 -xxx [2021/01/25]
 top right
 
-#+annotation: 1 0.231 0.093 -xxx [2021/01/25]
+#+annotation: 1 0.005 0.993 -xxx [2021/01/25]
+bottom left
+
+#+annotation: 1 0.984 0.993 -xxx [2021/01/25]
+bottom right
+
+#+annotation: 1 0.104 0.094 -xxx [2021/01/25]
 D
-↓
-d
-↓
-D
+
+#+annotation: 1 0.301 0.095 -xxx [2021/01/25]
+e
+
+#+annotation: 1 0.241 0.091 -xxx [2021/01/25]
+betweeen D and F
+
+#+annotation: 1 0.482 0.385 -xxx [2021/01/25]
+center

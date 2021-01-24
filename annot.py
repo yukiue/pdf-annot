@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import re
+import sys
 
 import fitz
 
@@ -13,10 +14,10 @@ def add_annot(num_page, x, y, text):
     page.addTextAnnot((width * x, y * height), text, icon='Comment')
 
 
-doc = fitz.open('dummy.pdf')
+doc = fitz.open(f'{sys.argv[1]}.pdf')
 
 ant = ''
-with open('dummy.ant') as f:
+with open(f'{sys.argv[1]}.ant') as f:
     for line in f:
         ant += line
 # print(ant)

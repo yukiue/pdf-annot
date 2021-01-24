@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#
+# usage: python3 annot.py basename
 
 import re
 import sys

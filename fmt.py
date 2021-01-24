@@ -2,26 +2,28 @@
 
 import re
 
-# with open('dummy.ant') as f:
-#     for line in f:
-#         print(line)
+ant = ''
+with open('dummy.ant') as f:
+    for line in f:
+        ant += line
+# print(ant)
 
-line = '#+annotation: 1 0.022 0.086 -xxx [2021/01/25]'
+for s in re.split(r'#\+', ant):
+    if 'annotation:' in s:
+        regex = re.compile(
+            r'annotation:\s(.+)\s(.+)\s(.+)\s-(.+)\s\[(.+)\]\n(.*)',
+            re.MULTILINE | re.DOTALL)
+        mo = regex.search(s)
+        num_page = int(mo.groups()[0]) - 1
+        x = float(mo.groups()[1])
+        y = float(mo.groups()[2])
+        name = mo.groups()[3]
+        date = mo.groups()[4]
+        text = mo.groups()[5]
 
-regex = re.compile(r'\#\+annotation:\s(.+)\s(.+)\s(.+)\s-(.+)\s\[(.+)\]')
-
-# regex = re.compile(r'\#\+annotation:\s(.+)\s(.+)\s(.+)\s-(.+)\s[(.+)]')
-
-mo = regex.search(line)
-
-num_page = int(mo.groups()[0]) - 1
-x = float(mo.groups()[1])
-y = float(mo.groups()[2])
-name = mo.groups()[3]
-date = mo.groups()[4]
-
-print(num_page)
-print(x)
-print(y)
-print(name)
-print(date)
+        print(num_page)
+        print(x)
+        print(y)
+        print(name)
+        print(date)
+        print(text)

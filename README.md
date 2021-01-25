@@ -6,11 +6,13 @@ An ant file is created by [doc-annotate](https://lsnl.jp/~ohsaki/software/elisp/
 
 # Usage
 
-If `paper.pdf` and `papdf.ant` exist in the current working directory, run the following command.
+If `paper.pdf` and `paper.ant` exist in the current working directory, run the following command.
 
 ```shell
 python3 annot.py paper
 ```
+
+Then, the annotated pdf file named `out.pdf` will be generated.
 
 # Requirements
 

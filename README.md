@@ -1,6 +1,6 @@
 # pdf-annot
 
-Add annotations to the pdf file according to the ant file
+Add annotations to the pdf file according to the corresponding ant file
 
 An ant file is created by [doc-annotate](https://lsnl.jp/~ohsaki/software/elisp/doc-annotate.el).
 

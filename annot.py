@@ -9,6 +9,13 @@ import fitz
 
 
 def add_annot(num_page, x, y, text):
+    '''
+    num_page: page number (zero-based indexing)
+    x: x coordinate (0.0 ~ 1.0)
+    y: y coordinate (0.0 ~ 1.0)
+    (The top-left corner is the origin.)
+    text: commentary text
+    '''
     page = doc[num_page]
     size = page.MediaBoxSize
     width, height = size[0], size[1]

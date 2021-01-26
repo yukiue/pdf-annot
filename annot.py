@@ -20,7 +20,7 @@ def add_annot(num_page, x, y, text):
     size = page.MediaBoxSize
     width, height = size[0], size[1]
     # print(width, height)
-    page.addTextAnnot((width * x, y * height), text, icon='Comment')
+    page.addTextAnnot((width * x, height * y), text, icon='Comment')
 
 
 doc = fitz.open(f'{sys.argv[1]}.pdf')

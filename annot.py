@@ -2,6 +2,7 @@
 #
 # usage: python3 annot.py basename
 
+import os
 import re
 import sys
 
@@ -23,10 +24,11 @@ def add_annot(num_page, x, y, text):
     page.addTextAnnot((width * x, height * y), text, icon='Comment')
 
 
-doc = fitz.open(f'{sys.argv[1]}.pdf')
+basename = os.path.splitext(os.path.basename(sys.argv[1]))[0]
+doc = fitz.open(f'{basename}.pdf')
 
 ant = ''
-with open(f'{sys.argv[1]}.ant') as f:
+with open(f'{basename}.ant') as f:
     for line in f:
         ant += line
 

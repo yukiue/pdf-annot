@@ -47,7 +47,7 @@ for s in re.split(r'#\+', ant):
 
         add_annot(num_page, x, y, text)
 
-doc.save('out.pdf')
+doc.save(f'{basename}-annotated.pdf')
 
 # if __name__ == "__main__":
 #     main()

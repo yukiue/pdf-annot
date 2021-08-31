@@ -20,7 +20,7 @@ python3 annot.py paper.ant
 python3 annot.py paper.pdf
 ```
 
-Then, the annotated pdf file named `out.pdf` will be generated.
+Then, the annotated pdf file named `paper-annotated.pdf` will be generated.
 
 # Requirements
 
